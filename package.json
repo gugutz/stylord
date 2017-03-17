@@ -3,20 +3,15 @@
   "version": "0.0.1",
   "description": "Lightweight javascript styles",
   "main": "dist/stylord.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "tape -r babel-register test/**/*.js",
     "test:watch": "tape-watch -r babel-register test/**/*.js",
     "lint": "xo lib/**/*.js test/**/*.js",
     "precommit": "npm run lint && npm run test && npm run build",
     "prepush": "npm run precommit",
-    "build": "npm run rollup && npm run uglify",
-    "rollup": "rollup -c",
-    "uglify": "uglifyjs dist/stylord.js -cm -o dist/stylord.min.js",
-    "build:watch": "npm run rollup -- -w",
-    "gzip-size": "gzip-size dist/stylord.min.js",
+    "build": "rollup -c",
+    "build:watch": "npm run build -- -w",
+    "gzip-size": "uglifyjs dist/stylord.js  -cm | gzip-size",
     "watch": "run-p -r build:watch test:watch"
   },
   "keywords": [

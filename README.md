@@ -35,14 +35,6 @@ import stylord from 'stylord'
 var stylord = require('stylord')
 ```
 
-The [UMD](https://github.com/umdjs/umd) build is also available on [unpkg](https://unpkg.com):
-
-```html
-<script src="https://unpkg.com/stylord/dist/stylord.min.js"></script>
-```
-
-You can find the library on `window.stylord`.
-
 ## Usage
 **Requirements:**
 - Code block illustrating common usage.

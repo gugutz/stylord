@@ -4,7 +4,7 @@ import nodeResolve from 'rollup-plugin-node-resolve'
 
 export default {
   entry: 'lib/stylord.js',
-  format: 'umd',
+  format: 'cjs',
   plugins: [
     buble({
       objectAssign: 'Object.assign'
