@@ -8,6 +8,8 @@
 > Lightweight javascript styles.
 
 
+:construction: Project under construction
+
 ## Table of Contents
 - [Install](#install)
 - [Usage](#usage)
