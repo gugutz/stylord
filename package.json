@@ -13,7 +13,8 @@
     "build": "rollup -c",
     "build:watch": "npm run build -- -w",
     "gzip-size": "uglifyjs dist/stylord.js -cm | gzip-size",
-    "watch": "run-p -r build:watch test:watch"
+    "watch": "run-p -r build:watch test:watch",
+    "prepublish": "npm run precommit"
   },
   "keywords": [
     "css",
