@@ -1,8 +1,8 @@
 # Stylord
 
-[![npm (scoped)](https://img.shields.io/npm/v/open-source-starter.svg)](https://www.npmjs.com/package/open-source-starter)
+[![npm (scoped)](https://img.shields.io/npm/v/stylord.svg)](https://www.npmjs.com/package/stylord)
 [![Travis](https://img.shields.io/travis/thiamsantos/stylord.svg)](https://travis-ci.org/thiamsantos/stylord)
-[![Coveralls](https://img.shields.io/coveralls/thiamsantos/open-source-starter.svg)](https://coveralls.io/github/thiamsantos/open-source-starter?branch=master)
+[![Coveralls](https://img.shields.io/coveralls/thiamsantos/stylord.svg)](https://coveralls.io/github/thiamsantos/stylord?branch=master)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 > Lightweight javascript styles.
