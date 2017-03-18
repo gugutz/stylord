@@ -42,10 +42,9 @@
     "tape": "^4.6.3",
     "tape-watch": "^2.3.0",
     "uglify-js": "^2.8.13",
-    "xo": "^0.17.1"
+    "xo": "^0.18.0"
   },
   "xo": {
-    "esnext": true,
     "envs": [
       "browser",
       "node"
