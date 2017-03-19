@@ -5,7 +5,7 @@
 [![Coveralls](https://img.shields.io/coveralls/thiamsantos/stylord.svg)](https://coveralls.io/github/thiamsantos/stylord?branch=master)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
-> Lightweight javascript styles.
+> Javascript styles made easy.
 
 ## Table of Contents
 

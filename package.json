@@ -1,7 +1,7 @@
 {
   "name": "stylord",
   "version": "0.0.1",
-  "description": "Lightweight javascript styles",
+  "description": "Javascript styles made easy",
   "main": "dist/stylord.js",
   "scripts": {
     "test": "npm run karma -- --no-auto-watch",
