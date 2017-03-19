@@ -5,10 +5,10 @@ module.exports = function(config) {
     basePath: __dirname,
     frameworks: ['browserify', 'mocha'],
     files: [
-      'test/**/*.js'
+      '../test/**/*.js'
     ],
     preprocessors: {
-      'test/**/*.js': ['browserify']
+      '../test/**/*.js': ['browserify']
     },
     browserify: {
       debug: true,
@@ -22,7 +22,7 @@ module.exports = function(config) {
         },
         {
           type : 'html',
-          dir : 'coverage/'
+          dir : '../coverage/'
         },
         { type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' }
       ]

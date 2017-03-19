@@ -3,5 +3,4 @@ test/
 .travis.yml
 .editorconfig
 CONTRIBUTING.md
-rollup.config.js
-karma.config.js
+config/

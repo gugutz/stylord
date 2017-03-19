@@ -6,16 +6,17 @@
   "scripts": {
     "test": "npm run karma -- --no-auto-watch",
     "test:watch": "npm run karma -- --no-single-run",
-    "karma": "karma start karma.config.js",
+    "karma": "karma start config/karma.config.js",
     "coveralls": "npm test && cat coverage/report-lcovonly.txt | coveralls",
     "lint": "xo lib/**/*.js test/**/*.js",
-    "precommit": "npm run lint && npm run test && npm run build",
+    "precommit": "npm run lint && npm run test && npm run build && npm run docs",
     "prepush": "npm run precommit",
-    "build": "rollup -c",
+    "build": "rollup -c config/rollup.config.js",
     "build:watch": "npm run build -- -w",
     "gzip-size": "uglifyjs dist/stylord.js -cm | gzip-size",
     "watch": "run-p -r build:watch test:watch",
-    "prepublish": "npm run precommit"
+    "prepublish": "npm run precommit",
+    "docs": "documentation documentation readme lib/stylord.js --section=API -q --shallow"
   },
   "keywords": [
     "css",
@@ -32,6 +33,7 @@
     "babel-preset-es2015": "^6.24.0",
     "babelify": "^7.3.0",
     "coveralls": "^2.12.0",
+    "documentation": "^4.0.0-beta.18",
     "gzip-size-cli": "^2.0.0",
     "husky": "^0.13.2",
     "karma": "^1.5.0",
