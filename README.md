@@ -71,7 +71,7 @@ Create a stylesheet and inject it to the head of the application.
 
 ```javascript
 // returns {modal: 'modal_hgdfgf', button: 'button_guyhg'}
-buildStylesheet({
+stylord({
   modal: {
     width: '100%'
   },
