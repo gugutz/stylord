@@ -2,13 +2,13 @@ process.env.NODE_ENV = 'test'
 
 module.exports = function(config) {
   config.set({
-    basePath: __dirname,
+    basePath: __dirname + '/..',
     frameworks: ['browserify', 'mocha'],
     files: [
-      '../test/**/*.js'
+      'test/**/*.js'
     ],
     preprocessors: {
-      '../test/**/*.js': ['browserify']
+      'test/**/*.js': ['browserify']
     },
     browserify: {
       debug: true,
@@ -22,7 +22,7 @@ module.exports = function(config) {
         },
         {
           type : 'html',
-          dir : '../coverage/'
+          dir : 'coverage/'
         },
         { type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' }
       ]
