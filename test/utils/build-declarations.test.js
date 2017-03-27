@@ -24,6 +24,22 @@ describe('buildDeclarations function', () => {
     assert.strictEqual(actual, expected)
   })
 
+  it('should ignore declarations that include pseudo selectors', () => {
+    const actual = buildDeclarations({
+      borderRadius: '2px',
+      ':before': {
+        content: '""',
+        color: 'red'
+      },
+      display: 'block',
+      width: '100%'
+    })
+    const expected = 'border-radius:2px;display:block;width:100%;'
+    assert.strictEqual(actual, expected)
+  })
+})
+
+describe('buildSingleDeclaration function', () => {
   it('should return a valid css rule', () => {
     const actual = buildSingleDeclaration('borderRadius', '20px')
     const expected = 'border-radius:20px;'
@@ -31,7 +47,6 @@ describe('buildDeclarations function', () => {
     assert.strictEqual(actual, expected)
   })
 })
-
 describe('isArray function', () => {
   it('should return true', () => {
     assert(isArray([]))

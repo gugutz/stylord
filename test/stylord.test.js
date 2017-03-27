@@ -5,7 +5,11 @@ describe('stylord function', () => {
   const rules = {
     app: {
       color: 'blue',
-      width: '100%'
+      width: '100%',
+      ':after': {
+        content: '""',
+        display: 'block'
+      }
     }
   }
   const classNames = stylord(rules)
@@ -18,5 +22,9 @@ describe('stylord function', () => {
   it('should have the rules described in the rules object', () => {
     assert(styleSheet.indexOf('color:blue;') !== -1)
     assert(styleSheet.indexOf('width:100%;') !== -1)
+  })
+
+  it('should support pseudo selectors', () => {
+    assert(styleSheet.indexOf(':after{content:"";display:block;}') !== -1)
   })
 })
