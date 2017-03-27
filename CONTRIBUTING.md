@@ -52,11 +52,11 @@ Writing docs | :memo: `:memo:`
 Fix a bug | :bug: `:bug:`
 Remove code or files | :fire: `:fire:`
 Fix CI build | :green_heart: `:green_heart:`
-Deal with security | :lock: `:lock`
+Deal with security | :lock: `:lock:`
 Upgrade dependencies | :arrow_up: `:arrow_up:`
 Downgrading dependencies | :arrow_down: `:arrow_down:`
 Add tests | :umbrella: `:umbrella:`
 Improving accessibility | :wheelchair: `:wheelchair:`
 Add new features | :sparkles: `:sparkles:`
-Refactoring | :package: `:package`
+Refactoring | :package: `:package:`
 Other | [Be creative](http://www.emoji-cheat-sheet.com/)
