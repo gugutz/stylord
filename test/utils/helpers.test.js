@@ -1,5 +1,5 @@
 import assert from 'assert'
-import {startsWith, isPseudoSelector} from '../../lib/utils/helpers'
+import {startsWith, isPseudoSelector, isMediaQuery} from '../../lib/utils/helpers'
 
 describe('startsWith function', () => {
   it('should return true', () => {
@@ -11,12 +11,22 @@ describe('startsWith function', () => {
   })
 })
 
-describe('isPseudoSelector', () => {
+describe('isPseudoSelector function', () => {
   it('should return true', () => {
     assert(isPseudoSelector(':after'))
   })
 
   it('should return false', () => {
     assert(!isPseudoSelector('borderRadius'))
+  })
+})
+
+describe('isMediaQuery function', () => {
+  it('should return true', () => {
+    assert(isMediaQuery('@media (min-width: 700px)'))
+  })
+
+  it('should return false', () => {
+    assert(!isMediaQuery('borderRadius'))
   })
 })

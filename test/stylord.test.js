@@ -9,6 +9,9 @@ describe('stylord function', () => {
       ':after': {
         content: '""',
         display: 'block'
+      },
+      '@media (min-width: 700px)': {
+        width: '300px'
       }
     }
   }
@@ -26,5 +29,9 @@ describe('stylord function', () => {
 
   it('should support pseudo selectors', () => {
     assert(styleSheet.indexOf(':after{content:"";display:block;}') !== -1)
+  })
+
+  it('should support media queries', () => {
+    assert(styleSheet.indexOf('@media (min-width: 700px){') !== -1)
   })
 })

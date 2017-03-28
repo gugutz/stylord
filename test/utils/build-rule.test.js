@@ -1,5 +1,9 @@
 import assert from 'assert'
-import {buildRule, buildPseudoRule} from '../../lib/utils/build-rule'
+import {
+  buildRule,
+  buildPseudoRule,
+  buildMediaQueryRule
+} from '../../lib/utils/build-rule'
 
 describe('buildRule function', () => {
   it('should return a css rule', () => {
@@ -29,6 +33,20 @@ describe('buildPseudoRule function', () => {
       color: 'red'
     })
     const expected = '.app:before{color:blue;}'
+    assert.strictEqual(actual, expected)
+  })
+})
+
+describe('buildMediaQueryRule function', () => {
+  it('should return a css rule for a media query', () => {
+    const actual = buildMediaQueryRule('app', {
+      borderRadius: '2px',
+      '@media (min-width: 700px)': {
+        color: 'blue'
+      },
+      color: 'red'
+    })
+    const expected = '@media (min-width: 700px){.app{color:blue;}}'
     assert.strictEqual(actual, expected)
   })
 })

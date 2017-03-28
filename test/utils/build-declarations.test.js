@@ -37,6 +37,19 @@ describe('buildDeclarations function', () => {
     const expected = 'border-radius:2px;display:block;width:100%;'
     assert.strictEqual(actual, expected)
   })
+
+  it('should ignore media queries', () => {
+    const actual = buildDeclarations({
+      borderRadius: '2px',
+      '@media (min-width: 700px)': {
+        color: 'red'
+      },
+      display: 'block',
+      width: '100%'
+    })
+    const expected = 'border-radius:2px;display:block;width:100%;'
+    assert.strictEqual(actual, expected)
+  })
 })
 
 describe('buildSingleDeclaration function', () => {
@@ -47,6 +60,7 @@ describe('buildSingleDeclaration function', () => {
     assert.strictEqual(actual, expected)
   })
 })
+
 describe('isArray function', () => {
   it('should return true', () => {
     assert(isArray([]))
