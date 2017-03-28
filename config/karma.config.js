@@ -70,7 +70,7 @@ module.exports = function (config) {
   const saucelabsConfig = {
     reporters: ['mocha', 'coverage', 'saucelabs'],
     sauceLabs: {
-      testName: 'Karma and Sauce Labs demo'
+      testName: 'Stylord tests'
     },
     captureTimeout: 120000,
     customLaunchers,
