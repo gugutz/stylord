@@ -32,6 +32,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-es2015": "^6.24.0",
     "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
     "coveralls": "^2.12.0",
     "documentation": "^4.0.0-beta.18",
     "gzip-size-cli": "^2.0.0",
@@ -81,7 +82,6 @@
     }
   },
   "dependencies": {
-    "browserify": "^14.1.0",
     "inline-style-prefixer": "^3.0.2",
     "kebab-case": "^1.0.0",
     "string-hash": "^1.1.3"
