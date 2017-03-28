@@ -58,7 +58,7 @@ class App extends Component {
 
 ## Support
 
-[![Build Status](https://saucelabs.com/browser-matrix/stylord.svg)](https://saucelabs.com/beta/builds/6e4ba976d5964ef4abf2de4c1b546d63)
+[![Build Status](https://saucelabs.com/browser-matrix/stylord.svg)](https://saucelabs.com/u/stylord)
 
 ## API
 
