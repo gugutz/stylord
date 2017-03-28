@@ -2,30 +2,31 @@ process.env.NODE_ENV = 'test'
 
 module.exports = function (config) {
   const customLaunchers = {
-    SL_Chrome: {
+    chrome: {
       base: 'SauceLabs',
-      browserName: 'chrome',
-      version: '48.0',
-      platform: 'Linux'
+      browserName: 'chrome'
     },
-    SL_Firefox: {
+    firefox: {
       base: 'SauceLabs',
-      browserName: 'firefox',
-      version: '50.0',
-      platform: 'Windows 10'
+      browserName: 'firefox'
     },
-    SL_InternetExplorer: {
+    internetExplorer: {
       base: 'SauceLabs',
       browserName: 'internet explorer',
       version: '11.0',
       platform: 'Windows 7'
     },
-    SL_Safari: {
+    safari: {
       base: 'SauceLabs',
       browserName: 'safari',
       platform: 'OS X 10.11',
       version: '10.0'
-    }
+    },
+    edge: {
+  		base: 'SauceLabs',
+  		browserName: 'MicrosoftEdge',
+  		platform: 'Windows 10'
+  	}
   }
 
   const mainConfig = {
