@@ -88,6 +88,32 @@ stylord({
 
 Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the class names of the css modules created.
 
+### createKeyframes
+
+Create a keyframe animation and inject it to the head of the application.
+
+**Parameters**
+
+-   `rules` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS keyframe to be create.
+
+**Examples**
+
+```javascript
+// returns {fade: 'fade_hgdfgf'}
+stylord({
+  fade: {
+    from: {
+      opacity: 1
+    },
+    to: {
+      opacity: 0
+    }
+  }
+})
+```
+
+Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the class names of the keyframes created.
+
 ## Contributing
 
 See the [contributing file](CONTRIBUTING.md).
