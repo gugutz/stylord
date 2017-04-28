@@ -114,6 +114,24 @@ stylord({
 
 Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the class names of the keyframes created.
 
+### createFontFace
+
+Create a font-face and inject it to the head of the application.
+
+**Parameters**
+
+-   `rules` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS font-face rules to be rendered.
+
+**Examples**
+
+```javascript
+createFontFace({
+  fontFamily: 'MyHelvetica',
+  src: 'local("Helvetica Neue Bold"), url(MgOpenModernaBold.ttf)',
+  fontWeight: 'bold'
+})
+```
+
 ## Contributing
 
 See the [contributing file](CONTRIBUTING.md).

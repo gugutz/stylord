@@ -41,16 +41,15 @@ describe('createKeyframes function', () => {
   })
 
   it('should support percents', () => {
-    assert(styleSheet.indexOf(
-      '0%{transform:rotate(0deg);}' +
-      '30%{transform:rotate(180deg);}' +
-      '100%{transform:rotate(360deg);}'
-    ) !== -1)
+    assert(
+      styleSheet.indexOf(
+        '0%{transform:rotate(0deg);}' +
+          '30%{transform:rotate(180deg);}' +
+          '100%{transform:rotate(360deg);}'
+      ) !== -1
+    )
   })
   it('should support from/to', () => {
-    assert(styleSheet.indexOf(
-      'from{opacity:1;}' +
-      'to{opacity:0;}'
-    ) !== -1)
+    assert(styleSheet.indexOf('from{opacity:1;}to{opacity:0;}') !== -1)
   })
 })

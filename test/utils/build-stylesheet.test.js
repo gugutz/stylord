@@ -24,7 +24,7 @@ describe('buildStylesheet function', () => {
     assert(
       actual.indexOf(
         'display:-webkit-box;display:-moz-box;' +
-        'display:-ms-flexbox;display:-webkit-flex;display:flex;'
+          'display:-ms-flexbox;display:-webkit-flex;display:flex;'
       ) !== -1
     )
   })

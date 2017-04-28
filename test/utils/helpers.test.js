@@ -1,5 +1,9 @@
 import assert from 'assert'
-import {startsWith, isPseudoSelector, isMediaQuery} from '../../lib/utils/helpers'
+import {
+  startsWith,
+  isPseudoSelector,
+  isMediaQuery
+} from '../../lib/utils/helpers'
 
 describe('startsWith function', () => {
   it('should return true', () => {
