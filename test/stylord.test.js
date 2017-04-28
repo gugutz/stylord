@@ -18,7 +18,7 @@ describe('stylord function', () => {
   const classNames = stylord(rules)
   const styleSheet = document.querySelector('[data-stylord]').textContent
 
-  it('should compile the scripts to head of the page', () => {
+  it('should compile the styles to head of the page', () => {
     assert(styleSheet.indexOf(classNames.app) !== -1)
   })
 
