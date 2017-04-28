@@ -24,16 +24,6 @@ This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go che
 $ npm install --save-dev stylord
 ```
 
-Then with a module bundler like [rollup](http://rollupjs.org/) or [webpack](https://webpack.js.org/), use as you would anything else:
-
-```javascript
-// using ES6 modules
-import stylord from 'stylord'
-
-// using CommonJS modules
-var stylord = require('stylord')
-```
-
 ## Usage
 
 ```jsx
