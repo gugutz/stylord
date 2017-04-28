@@ -37,10 +37,10 @@ var stylord = require('stylord')
 ## Usage
 
 ```jsx
-import stylord from 'stylord'
+import {createStyles} from 'stylord'
 import React, {Component} from 'react'
 
-const style = stylord({
+const style = createStyles({
   app: {
     color: 'blue',
     fontSize: '20px'

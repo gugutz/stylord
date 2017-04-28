@@ -1,5 +1,5 @@
 import assert from 'assert'
-import stylord from '../lib/stylord'
+import {createStyles} from '../lib/stylord'
 
 describe('stylord function', () => {
   const rules = {
@@ -15,7 +15,7 @@ describe('stylord function', () => {
       }
     }
   }
-  const classNames = stylord(rules)
+  const classNames = createStyles(rules)
   const styleSheet = document.querySelector('[data-stylord]').textContent
 
   it('should compile the styles to head of the page', () => {
