@@ -1,5 +1,7 @@
 # Stylord
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/thiamsantos/stylord.svg)](https://greenkeeper.io/)
+
 [![npm (scoped)](https://img.shields.io/npm/v/stylord.svg)](https://www.npmjs.com/package/stylord)
 [![Travis](https://img.shields.io/travis/thiamsantos/stylord.svg)](https://travis-ci.org/thiamsantos/stylord)
 [![Coveralls](https://img.shields.io/coveralls/thiamsantos/stylord.svg)](https://coveralls.io/github/thiamsantos/stylord?branch=master)
