@@ -7,6 +7,14 @@
 
 > Javascript styles made easy.
 
+Stylord provides a simple to declare your stylesheets inside the JavaScript files without [worrying about](http://i.imgur.com/Q3cUg29.gif) the CSS global scope.
+
+- Declare your css as simple [Object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals).
+- Works like a charm with any framework or with just [vanilla JavaScript](http://vanilla-js.com/).
+- Full support of [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) like `:hover` and [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) like `::after`.
+- Autoprefixer out-of-box.
+- Easy to use [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries), [keyframes animation](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) and [font-face](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@font-face).
+
 ## Table of Contents
 
 -   [Install](#install)
