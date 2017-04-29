@@ -111,7 +111,7 @@ stylord({
 })
 ```
 
-Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the class names of the keyframes created.
+Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the names of the keyframes created.
 
 ### createFontFace
 
