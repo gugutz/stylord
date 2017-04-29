@@ -1,6 +1,0 @@
-lib/
-test/
-.travis.yml
-.editorconfig
-CONTRIBUTING.md
-config/

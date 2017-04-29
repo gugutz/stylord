@@ -3,6 +3,8 @@
   "version": "2.1.1",
   "description": "Javascript styles made easy",
   "main": "dist/stylord.js",
+  "module": "lib/stylord.js",
+  "jsnext:main": "lib/stylord.js",
   "scripts": {
     "test": "npm run karma -- --no-auto-watch",
     "test:watch": "npm run karma -- --no-single-run",
@@ -88,6 +90,10 @@
     "kebab-case": "^1.0.0",
     "string-hash": "^1.1.3"
   },
+  "files": [
+    "lib",
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thiamsantos/stylord.git"
