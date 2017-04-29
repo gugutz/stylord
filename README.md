@@ -130,6 +130,33 @@ createFontFace({
 })
 ```
 
+### createGlobals
+
+Create a global css and inject it to the head of the application.
+
+**Parameters**
+
+-   `rules` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS global rules to be rendered.
+
+**Examples**
+
+```javascript
+createGlobals({
+  '*': {
+    border: 0,
+    boxSizing: 'inherit',
+    margin: 0,
+    padding: 0,
+    outline: 0,
+    verticalAlign: 'baseline'
+  },
+  body: {
+    boxSizing: 'border-box',
+    lineHeight: 1.5
+  }
+})
+```
+
 ## Contributing
 
 See the [contributing file](CONTRIBUTING.md).
