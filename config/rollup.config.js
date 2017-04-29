@@ -14,11 +14,7 @@ export default {
     buble({
       objectAssign: 'Object.assign'
     }),
-    nodeResolve({
-      jsnext: true,
-      main: true,
-      browser: true
-    }),
+    nodeResolve(),
     commonjs({
       include: 'node_modules/**'
     })
