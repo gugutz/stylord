@@ -126,7 +126,7 @@ class App extends Component {
 ### Keyframes animation
 
 ```jsx
-import {createStyles, cre} from 'stylord'
+import {createStyles, createKeyframes} from 'stylord'
 import React, {Component} from 'react'
 
 // Animation taken from https://github.com/daneden/animate.css/blob/master/source/attention_seekers/bounce.css
