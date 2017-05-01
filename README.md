@@ -19,6 +19,11 @@ Stylord provides a simple to declare your stylesheets inside the JavaScript file
 
 -   [Install](#install)
 -   [Usage](#usage)
+    -   [Media Queries](#media-queries)
+    -   [Pseudo-classes and pseudo-elements](#pseudo-classes-and-pseudo-elements)
+    -   [Keyframes animation](#keyframes-animation)
+    -   [Font-face](#font-face)
+    -   [Globals](#globals)
 -   [Support](#support)
 -   [API](#api)
 -   [Contributing](#contributing)
@@ -38,6 +43,179 @@ $ npm install --save-dev stylord
 ```jsx
 import {createStyles} from 'stylord'
 import React, {Component} from 'react'
+
+const style = createStyles({
+  app: {
+    color: 'blue',
+    fontSize: '20px'
+  }
+})
+
+class App extends Component {
+  render() {
+    return <div className={style.app}>
+      Hello World
+    </div>
+  }
+}
+```
+
+### Media queries
+
+```jsx
+import {createStyles} from 'stylord'
+import React, {Component} from 'react'
+
+const style = createStyles({
+  app: {
+    color: 'blue',
+    '@media screen and (min-width: 300px)': {
+      color: 'red'
+    },
+    '@media screen and (min-width: 600px)': {
+      color: 'pink'
+    },
+    '@media screen and (min-width: 900px)': {
+      color: 'yellow'
+    }
+  }
+})
+
+class App extends Component {
+  render() {
+    return <div className={style.app}>
+      Hello World
+    </div>
+  }
+}
+```
+
+### Pseudo-classes and pseudo-elements
+
+```jsx
+import {createStyles} from 'stylord'
+import React, {Component} from 'react'
+
+const style = createStyles({
+  app: {
+    color: 'blue',
+    position: 'relative'
+    ':hover': {
+      color: 'red'
+    },
+    '::before': {
+      backgroundColor: 'green',
+      content: '""', // You must provide the content as it will be in the css
+      display: 'block',
+      left: 0,
+      position: 'absolute',
+      top: 0
+    }
+  }
+})
+
+class App extends Component {
+  render() {
+    return <div className={style.app}>
+      Hello World
+    </div>
+  }
+}
+```
+
+### Keyframes animation
+
+```jsx
+import {createStyles, cre} from 'stylord'
+import React, {Component} from 'react'
+
+// Animation taken from https://github.com/daneden/animate.css/blob/master/source/attention_seekers/bounce.css
+const animations = createKeyframes({
+  bounce: {
+    'from, 20%, 53%, 80%, to': {
+      animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
+      transform: 'translate3d(0,0,0)'
+    },
+    '40%, 43%': {
+      animationTimingFunction: 'cubic-bezier(0.755, 0.050, 0.855, 0.060)',
+      transform: 'translate3d(0, -30px, 0)'
+    }
+    '70%': {
+      animationTimingFunction: 'cubic-bezier(0.755, 0.050, 0.855, 0.060)',
+      transform: 'translate3d(0, -15px, 0)'
+    },
+    '90%': {
+      transform: 'translate3d(0,-4px,0)'
+    }
+  }
+})
+
+const style = createStyles({
+  app: {
+    animationDuration: '1s',
+    animationFill-mode: 'both',
+    animationName: animations.bounce,
+    transformOrigin: 'center bottom'
+  }
+})
+
+class App extends Component {
+  render() {
+    return <div className={style.app}>
+      Hello World
+    </div>
+  }
+}
+```
+
+### Font-face
+
+```jsx
+import {createStyles, createFontFace} from 'stylord'
+import React, {Component} from 'react'
+
+createFontFace({
+  fontFamily: 'Roboto',
+  fontStyle: 'normal',
+  fontWeight: 400,
+  src: 'local("Roboto"), local("Roboto-Regular"), url(path/to/font/roboto.woff2) format("woff2")'
+})
+
+const style = createStyles({
+  app: {
+    color: 'blue',
+    fontSize: '20px',
+    fontFamily: '"Roboto", sans-serif'
+  }
+})
+
+class App extends Component {
+  render() {
+    return <div className={style.app}>
+      Hello World
+    </div>
+  }
+}
+```
+
+### Globals
+
+Stylord provide a simple way to handle global css rules, it's a very useful feature to reset the unwanted default css properties. But [with great power comes great responsibility](https://youtu.be/nhLyPH_KirE), so use it wisely.
+
+```jsx
+import {createStyles, createGlobals} from 'stylord'
+import React, {Component} from 'react'
+
+createGlobals({
+  '*': {
+    border: 0,
+    margin: 0,
+    padding: 0
+  },
+  '*, *::after, *::before': {
+    boxSizing: border-box
+  }
+})
 
 const style = createStyles({
   app: {
