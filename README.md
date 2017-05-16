@@ -153,7 +153,7 @@ const animations = createKeyframes({
 const style = createStyles({
   app: {
     animationDuration: '1s',
-    animationFill-mode: 'both',
+    animationFillMode: 'both',
     animationName: animations.bounce,
     transformOrigin: 'center bottom'
   }
