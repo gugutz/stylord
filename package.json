@@ -1,6 +1,6 @@
 {
   "name": "stylord",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "Javascript styles made easy",
   "main": "dist/stylord.js",
   "module": "dist/stylord.es.js",
