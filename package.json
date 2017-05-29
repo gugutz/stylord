@@ -3,8 +3,8 @@
   "version": "2.2.0",
   "description": "Javascript styles made easy",
   "main": "dist/stylord.js",
-  "module": "lib/stylord.js",
-  "jsnext:main": "lib/stylord.js",
+  "module": "dist/stylord.es.js",
+  "jsnext:main": "dist/stylord.es.js",
   "scripts": {
     "test": "npm run karma -- --no-auto-watch",
     "test:watch": "npm run karma -- --no-single-run",
@@ -91,7 +91,6 @@
     "string-hash": "^1.1.3"
   },
   "files": [
-    "lib",
     "dist"
   ],
   "repository": {

@@ -8,7 +8,6 @@ const dependencies = Object.keys(pkg.dependencies || {})
 
 export default {
   entry: 'lib/stylord.js',
-  format: 'cjs',
   external: dependencies,
   plugins: [
     buble({
@@ -19,5 +18,14 @@ export default {
       include: 'node_modules/**'
     })
   ],
-  dest: 'dist/stylord.js'
+  targets: [
+    {
+      format: 'cjs',
+      dest: 'dist/stylord.js'
+    },
+    {
+      format: 'es',
+      dest: 'dist/stylord.es.js'
+    }
+  ]
 }
