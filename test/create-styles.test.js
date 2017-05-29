@@ -11,7 +11,10 @@ describe('stylord function', () => {
         display: 'block'
       },
       '@media (min-width: 700px)': {
-        width: '300px'
+        width: '300px',
+        ':not(:last-child)': {
+          marginBottom: '10px'
+        }
       }
     }
   }
@@ -33,5 +36,15 @@ describe('stylord function', () => {
 
   it('should support media queries', () => {
     assert(styleSheet.indexOf('@media (min-width: 700px){') !== -1)
+  })
+
+  console.log(styleSheet)
+
+  it('should handle pseudo selectors inside media queries', () => {
+    assert(
+      styleSheet.indexOf(
+        '@media (min-width: 700px){.app_1inrscb{width:300px;}.app_1inrscb:not(:last-child){margin-bottom:10px;}}'
+      ) !== -1
+    )
   })
 })
