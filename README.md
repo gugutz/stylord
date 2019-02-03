@@ -1,8 +1,8 @@
 # Stylord
 
 [![npm (scoped)](https://img.shields.io/npm/v/stylord.svg)](https://www.npmjs.com/package/stylord)
-[![Travis](https://img.shields.io/travis/thiamsantos/stylord.svg)](https://travis-ci.org/thiamsantos/stylord)
-[![Coveralls](https://img.shields.io/coveralls/thiamsantos/stylord.svg)](https://coveralls.io/github/thiamsantos/stylord?branch=master)
+[![Travis](https://img.shields.io/travis/gugutz/stylord.svg)](https://travis-ci.org/gugutz/stylord)
+[![Coveralls](https://img.shields.io/coveralls/gugutz/stylord.svg)](https://coveralls.io/github/gugutz/stylord?branch=master)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 > Javascript styles made easy.
@@ -247,7 +247,7 @@ Create a stylesheet and inject it to the head of the application.
 
 **Parameters**
 
--   `rules` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS rules to be rendered.
+-   `rules` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS rules to be rendered.
 
 **Examples**
 
@@ -263,7 +263,7 @@ createStyles({
 })
 ```
 
-Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the class names of the css modules created.
+Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** the class names of the css modules created.
 
 ### createKeyframes
 
@@ -271,7 +271,7 @@ Create a keyframe animation and inject it to the head of the application.
 
 **Parameters**
 
--   `rules` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS keyframe to be create.
+-   `rules` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS keyframe to be create.
 
 **Examples**
 
@@ -289,7 +289,7 @@ stylord({
 })
 ```
 
-Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the names of the keyframes created.
+Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** the names of the keyframes created.
 
 ### createFontFace
 
@@ -297,7 +297,7 @@ Create a font-face and inject it to the head of the application.
 
 **Parameters**
 
--   `rules` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS font-face rules to be rendered.
+-   `rules` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS font-face rules to be rendered.
 
 **Examples**
 
@@ -315,7 +315,7 @@ Create a global css and inject it to the head of the application.
 
 **Parameters**
 
--   `rules` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS global rules to be rendered.
+-   `rules` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** CSS global rules to be rendered.
 
 **Examples**
 
@@ -342,4 +342,4 @@ See the [contributing file](CONTRIBUTING.md).
 
 ## License
 
-[MIT License](LICENSE.md) © [Thiago Santos](https://thiamsantos.github.io/)
+[MIT License](LICENSE.md) © [Gustavo P Borges](https://gugutz.github.io/)

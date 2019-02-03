@@ -26,7 +26,7 @@
     "css-in-js",
     "framework-agnostic"
   ],
-  "author": "Thiago Santos",
+  "author": "Gustavo P Borges",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -95,10 +95,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thiamsantos/stylord.git"
+    "url": "git+https://github.com/gugutz/stylord.git"
   },
   "bugs": {
-    "url": "https://github.com/thiamsantos/stylord/issues"
+    "url": "https://github.com/gugutz/stylord/issues"
   },
-  "homepage": "https://github.com/thiamsantos/stylord#readme"
+  "homepage": "https://github.com/gugutz/stylord#readme"
 }
