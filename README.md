@@ -7,10 +7,10 @@
 
 > Javascript styles made easy.
 
-Stylord provides a simple to declare your stylesheets inside the JavaScript files without [worrying about](http://i.imgur.com/Q3cUg29.gif) the CSS global scope.
+Stylord provides a simple way to declare your stylesheets inside the JavaScript files without [worrying about](http://i.imgur.com/Q3cUg29.gif) the CSS global scope.
 
--   Declare your css as simple [Object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals).
--   Works like a charm with any framework or with just [vanilla JavaScript](http://vanilla-js.com/).
+-   Declare your CSS as simple [Object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals).
+-   Works like a charm with any framework or just [vanilla JavaScript](http://vanilla-js.com/).
 -   Full support of [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) like `:hover` and [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) like `::after`.
 -   Autoprefixer out-of-box.
 -   Easy to use [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries), [keyframes animation](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) and [font-face](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@font-face).
@@ -200,7 +200,7 @@ class App extends Component {
 
 ### Globals
 
-Stylord provide a simple way to handle global css rules, it's a very useful feature to reset the unwanted default css properties. But [with great power comes great responsibility](https://youtu.be/nhLyPH_KirE), so use it wisely.
+Stylord provide a simple way to handle global css rules, it's a very useful feature to reset any unwanted default css properties. But [with great power comes great responsibility](https://youtu.be/nhLyPH_KirE), so use it wisely.
 
 ```jsx
 import {createStyles, createGlobals} from 'stylord'
